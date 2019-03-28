@@ -9,12 +9,18 @@ server:
 spring:
   profiles: dev
   application:
-      name: spring-cloud-config-test-client
+      name: spring-cloud-config-test-client4
 
 eureka:
  client:
   serviceUrl:
     defaultZone: http://adminn:enjoy@localhost:7001/eureka
+  register-with-eureka: false
+ 
+info:
+  app.name: spring-cloud-config-client-devdev
+  company.name: enjoy
+ 
 ---
 server:
   port: 8102
@@ -22,9 +28,17 @@ server:
 spring:
   profiles: beta
   application:
-      name: spring-cloud-config-test-client
+      name: spring-cloud-config-test-client2
 
 eureka:
  client:
   serviceUrl:
     defaultZone: http://adminn:enjoy@localhost:7001/eureka
+  register-with-eureka: false
+   
+info:
+  app.name: spring-cloud-config-client-beta
+  company.name: enjoybeta
+  
+  
+  
