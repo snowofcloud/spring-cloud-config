@@ -90,5 +90,4 @@ management:
     web:
       exposure:
         include: '*'
- 
     

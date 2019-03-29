@@ -9,12 +9,12 @@ server:
 spring:
   profiles: dev
   application:
-      name: spring-cloud-config-test-client4
+      name: spring-cloud-config-test-client5
 
 eureka:
  client:
   serviceUrl:
-    defaultZone: http://adminn:enjoy@localhost:7001/eureka
+    defaultZone: http://adminn:enjoy@localhost:7301/eureka
   register-with-eureka: false
  
 info:
@@ -28,12 +28,12 @@ server:
 spring:
   profiles: beta
   application:
-      name: spring-cloud-config-test-client2
+      name: spring-cloud-config-test-client5
 
 eureka:
  client:
   serviceUrl:
-    defaultZone: http://adminn:enjoy@localhost:7001/eureka
+    defaultZone: http://adminn:enjoy@localhost:7301/eureka
   register-with-eureka: false
    
 info:
